@@ -1,0 +1,93 @@
+$pc: 1024px;
+$tab: 680px;
+$sp: 480px;
+
+@mixin pc {
+  @media (max-width: ($pc)) {
+    @content;
+  }
+}
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+.wrapper {
+  background-color: #EEEEEE;
+  margin: 0 auto;
+  text-align: center;
+  font-family: BlinkMacSystemFont;
+  color: #333333;
+}
+
+h1 {
+  font-size: 2.5rem;
+  @include sp {
+    font-size: 2rem;
+  };
+}
+
+.figure {
+  background-color: #FFFFFF;
+  margin: 0 15px;
+  padding: 0 0 1px 0;
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  figcaption {
+    margin: 15px auto;
+  }
+}
+
+span {
+  font-weight: bold;
+}
+
+span:after {
+  content: " - ";
+}
+
+.timeline {
+  text-align: left;
+  .timeline-title {
+    text-align: center;
+    margin: 50px auto;
+    font-size: 1.2rem;
+  }
+  ul {
+    max-width: 550px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    li {
+      margin: 12px;
+    }
+  }
+  blockquote {
+    max-width: 550px;
+    margin: 50px auto;
+    padding: 0 20px;
+    font-style: italic;
+    line-height: 1.6rem;
+  }
+  .read-more {
+    text-align: center;
+    margin: 50px auto;
+    font-size: 1.2rem;
+    padding-bottom: 40px;
+  }
+  a {
+    color: #477CA7;
+  }
+  a:visited {
+    color: #74638F;
+  }
+}

@@ -1,0 +1,86 @@
+.wrapper {
+  background-color: #EEEEEE;
+  margin: 0 auto;
+  text-align: center;
+  font-family: BlinkMacSystemFont;
+  color: #333333;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+.figure {
+  background-color: #FFFFFF;
+  margin: 0 15px;
+  padding: 0 0 1px 0;
+}
+
+.figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.figure figcaption {
+  margin: 15px auto;
+}
+
+span {
+  font-weight: bold;
+}
+
+span:after {
+  content: " - ";
+}
+
+.timeline {
+  text-align: left;
+}
+
+.timeline .timeline-title {
+  text-align: center;
+  margin: 50px auto;
+  font-size: 1.2rem;
+}
+
+.timeline ul {
+  max-width: 550px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+.timeline ul li {
+  margin: 12px;
+}
+
+.timeline blockquote {
+  max-width: 550px;
+  margin: 50px auto;
+  padding: 0 20px;
+  font-style: italic;
+  line-height: 1.6rem;
+}
+
+.timeline .read-more {
+  text-align: center;
+  margin: 50px auto;
+  font-size: 1.2rem;
+  padding-bottom: 40px;
+}
+
+.timeline a {
+  color: #477CA7;
+}
+
+.timeline a:visited {
+  color: #74638F;
+}
+/*# sourceMappingURL=style.css.map */
